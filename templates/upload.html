@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Similarity Score</title>
+</head>
+<body>
+    <h1>Upload Files</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file1">Resume:</label>
+        <input type="file" id="file1" name="file1" required><br>
+
+        <label for="file2">Job Description:</label>
+        <input type="file" id="file2" name="file2" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Similarity Score: {{ similarity_score }}</h1>
+</body>
+</html>
